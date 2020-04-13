@@ -123,3 +123,7 @@ STATIC_URL = '/front_end/static/'
 STATICFILES_DIRS = [
     os.path.join(ROOT_DIR, "front_end/static"), 
 ]
+
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
